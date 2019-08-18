@@ -8,8 +8,6 @@
   </header>
 </template>
 <style scoped lang="scss">
-@import '~assets/scss/variables';
-
 .header {
   position: absolute;
   top: 30px;
