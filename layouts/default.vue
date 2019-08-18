@@ -17,3 +17,10 @@ export default {
   }
 }
 </script>
+<style scoped lang="scss">
+.contents {
+  max-width: 90%;
+  padding: 10px 40px 80px 40px;
+  margin: 0 auto;
+}
+</style>
