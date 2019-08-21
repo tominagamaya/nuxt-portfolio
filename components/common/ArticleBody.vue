@@ -1,30 +1,32 @@
 <template>
-  <div class="layout-error">
-    <section>
-      <h2 class="section-title">404</h2>
-      <div class="article-body">
-        <h3>ページをひらけません</h3>
-        <p>アクセスされたページは存在しないか、すでに削除されています。</p>
-      </div>
-    </section>
+  <div class="article-body">
+    <slot></slot>
   </div>
 </template>
 <style scoped lang="scss">
 .article-body {
+  min-height: 300px;
+  background-color: #fff;
+  box-shadow: 1px 27px 39px 0 rgba(0, 0, 0, 0.07);
+
+  &.profile {
+    padding: 50px 400px 50px 90px;
+  }
+
+  &.works {
+    padding: 50px 30px 50px 80px;
+  }
+
   h3 {
     font-size: 20px;
     margin: 30px 0 20px;
   }
 
   p {
-    line-height: 1.75;
+    line-height: 1;
 
     + p {
       margin-top: 20px;
-    }
-
-    a {
-      color: $color-blue;
     }
   }
 

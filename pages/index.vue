@@ -1,51 +1,48 @@
 <template>
   <div class="page-index">
-    <section class="about">
-      <h2>Maya Tominaga</h2>
+    <section>
+      <h2 class="section-title">Maya Tominaga</h2>
       <div class="article-body profile">
         <p>独立系SIerから事業会社のWebエンジニアになりました。</p>
-        <p>インフラ、サーバーサイド、フロントエンドまで幅広く経験。</p>
-        <p>ユーザー目線にたったフロントエンド開発が得意。</p>
+        <p>サーバーサイド、フロントエンドまで幅広く経験。</p>
+        <p>ユーザー目線にたったデザインを含むフロントエンド開発が得意。</p>
+        <p>技術ブログを書くことが好きで、週1の頻度で更新しています。</p>
         <p>テニスが好きでスクールに通っています。</p>
-        <p>技術ブログを書くのが好きで週1の頻度で更新しています。</p>
+        <p>継続的な努力と想いやりを大切にしています。</p>
         <div class="about-image">
           <img src="~/assets/images/monchhichi.png" alt="Maya Tominaga" />
         </div>
       </div>
     </section>
-    <section class="works">
-      <h2>Works</h2>
+    <section>
+      <h2 class="section-title">Works</h2>
       <div class="article-body works">
         <div class="article-content">
           <p>技術ブログ</p>
-          <img src="~/assets/images/blog.png" />
+          <a href="https://mmtomitomimm.blogspot.com/" target="_blank">
+            <img src="~/assets/images/blog.png" />
+          </a>
         </div>
         <div class="article-content">
           <p>ユーザー管理アプリ</p>
-          <img src="~/assets/images/manage-app.png" />
+          <a
+            href="https://user-setting-app-20190502.herokuapp.com/"
+            target="_blank"
+          >
+            <img src="~/assets/images/manage-app.png" />
+          </a>
         </div>
         <div class="article-content">
           <p>ブログアプリ</p>
-          <img src="~/assets/images/blog-app.png" />
+          <a href="https://calm-beach-62772.herokuapp.com/" target="_blank">
+            <img src="~/assets/images/blog-app.png" />
+          </a>
         </div>
       </div>
     </section>
   </div>
 </template>
 <style scoped lang="scss">
-.about,
-.works {
-  h2 {
-    display: flex;
-    align-items: center;
-    margin: 100px 0 30px;
-    font-size: 33px;
-    letter-spacing: 2px;
-    font-weight: 400;
-    color: #3a3a3a;
-  }
-}
-
 .article-body {
   min-height: 300px;
   background-color: #fff;
@@ -69,18 +66,6 @@
 
     + p {
       margin-top: 20px;
-    }
-  }
-
-  ul {
-    list-style: circle;
-    margin-top: 20px;
-    margin-left: 20px;
-
-    li {
-      &:nth-of-type(n + 2) {
-        margin-top: 0.5em;
-      }
     }
   }
 

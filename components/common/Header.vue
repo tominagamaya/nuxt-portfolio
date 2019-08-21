@@ -1,9 +1,15 @@
 <template>
   <header class="header">
     <ul class="header-inner">
-      <li>top</li>
-      <li>profile</li>
-      <li>works</li>
+      <li>
+        <nuxt-link class="header-link" to="/">top</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link class="header-link" to="about">profile</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link class="header-link" to="works">works</nuxt-link>
+      </li>
     </ul>
   </header>
 </template>
@@ -17,7 +23,9 @@
   font-size: 18px;
   letter-spacing: 2.5px;
 }
-
+.header-link {
+  color: #3a3a3a;
+}
 .header-inner {
   height: 60px;
 
