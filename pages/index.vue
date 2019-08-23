@@ -10,7 +10,7 @@
         <p>テニスが好きでスクールに通っています。</p>
         <p>継続的な努力と想いやりを大切にしています。</p>
         <div class="about-image">
-          <img src="~/assets/images/monchhichi.png" alt="Maya Tominaga" />
+          <img src="~/assets/images/me.png" alt="Maya Tominaga" />
         </div>
       </div>
     </section>
@@ -84,7 +84,7 @@
   border-radius: 4px;
   border: 0;
   box-shadow: 1px 27px 39px 0 rgba(0, 0, 0, 0.07);
-  max-width: 100%;
+  max-width: 20%;
 }
 .article-content {
   height: 200px;
