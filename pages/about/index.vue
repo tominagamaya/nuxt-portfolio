@@ -1,7 +1,7 @@
 <template>
   <div class="page-about">
     <section>
-      <h2 class="section-title">About Me</h2>
+      <h2 class="section-title effect-fade-side">About Me</h2>
       <div class="article-body about">
         <p>
           独立系SIer（4年）からユーザー向け事業会社でSESとして勤務（2年）を経て、
@@ -29,7 +29,7 @@
       </div>
     </section>
     <section>
-      <h2 class="section-title">Skils</h2>
+      <h2 class="section-title effect-fade-side">Skils</h2>
       <div class="article-body skils">
         <p class="article-detail">実務経験がある技術です。</p>
         <ul>
@@ -81,5 +81,21 @@
 }
 .article-detail {
   padding-bottom: 15px;
+}
+.effect-fade-side {
+  animation-name: fade-in-side;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fade-in-side {
+  from {
+    opacity: 0;
+    transform: translate3d(10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 </style>

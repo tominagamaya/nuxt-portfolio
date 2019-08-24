@@ -1,7 +1,7 @@
 <template>
   <div class="page-about">
     <section>
-      <h2 class="section-title">Works</h2>
+      <h2 class="section-title effect-fade-side">Works</h2>
       <div class="article-body works">
         <div class="article-content">
           <p class="article-detail">
@@ -168,5 +168,21 @@
 .article-detail {
   font-size: 14px;
   padding-bottom: 45px;
+}
+.effect-fade-side {
+  animation-name: fade-in-side;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fade-in-side {
+  from {
+    opacity: 0;
+    transform: translate3d(10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="page-index">
     <section>
-      <h2 class="section-title">Maya Tominaga</h2>
+      <h2 class="section-title effect-fade-side">Maya Tominaga</h2>
       <div class="article-body profile">
         <p>独立系SIerから事業会社のWebエンジニアになりました。</p>
         <p>サーバーサイド、フロントエンドまで幅広く経験。</p>
@@ -9,13 +9,13 @@
         <p>技術ブログを書くことが好きで、週1の頻度で更新しています。</p>
         <p>テニスが好きでスクールに通っています。</p>
         <p>継続的な努力と想いやりを大切にしています。</p>
-        <div class="about-image">
+        <div class="about-image effect-fade">
           <img src="~/assets/images/me.png" alt="Maya Tominaga" />
         </div>
       </div>
     </section>
     <section>
-      <h2 class="section-title">Works</h2>
+      <h2 class="section-title effect-fade-side">Works</h2>
       <div class="article-body works">
         <div class="article-content">
           <p>技術ブログ</p>
@@ -100,6 +100,39 @@
     box-shadow: 12px 20px 25px 0 rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0;
+  }
+}
+.effect-fade {
+  animation-name: fade-in-top;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fade-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.effect-fade-side {
+  animation-name: fade-in-side;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fade-in-side {
+  from {
+    opacity: 0;
+    transform: translate3d(10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 </style>
