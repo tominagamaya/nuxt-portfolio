@@ -15,17 +15,24 @@
       </div>
     </section>
     <section>
-      <h2 class="section-title effect-fade-side">Works</h2>
+      <h2 id="work-trigger" class="section-title effect-fade-side">
+        Works
+      </h2>
       <div class="article-body works">
         <div class="article-content">
           <p>技術ブログ</p>
-          <a href="https://mmtomitomimm.blogspot.com/" target="_blank">
+          <a
+            id="work-image"
+            href="https://mmtomitomimm.blogspot.com/"
+            target="_blank"
+          >
             <img src="~/assets/images/blog.png" />
           </a>
         </div>
         <div class="article-content">
           <p>ユーザー管理アプリ</p>
           <a
+            id="work-image"
             href="https://user-setting-app-20190502.herokuapp.com/"
             target="_blank"
           >
@@ -34,7 +41,11 @@
         </div>
         <div class="article-content">
           <p>ブログアプリ</p>
-          <a href="https://calm-beach-62772.herokuapp.com/" target="_blank">
+          <a
+            id="work-image"
+            href="https://calm-beach-62772.herokuapp.com/"
+            target="_blank"
+          >
             <img src="~/assets/images/blog-app.png" />
           </a>
         </div>
@@ -42,6 +53,29 @@
     </section>
   </div>
 </template>
+<script>
+export default {
+  mounted() {
+    const scene1 = this.$scrollmagic
+      .scene({
+        triggerElement: '#work-trigger',
+        triggerHook: 0.5,
+        offset: 10,
+        duration: 300,
+        reverse: false
+      })
+      .setTween('#work-image', {
+        css: {
+          opacity: '1'
+        }
+      })
+    // .addIndicators({ name: 'OK' })
+
+    this.$scrollmagic.addScene(scene1)
+  }
+}
+</script>
+
 <style scoped lang="scss">
 .article-body {
   min-height: 300px;
@@ -100,6 +134,10 @@
     box-shadow: 12px 20px 25px 0 rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0;
+  }
+
+  #work-image {
+    opacity: 0;
   }
 }
 .effect-fade {

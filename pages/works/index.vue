@@ -9,7 +9,7 @@
             画像をクリックするとリンク先に移動します。
           </p>
           <div class="article-image">
-            <p>技術ブログ</p>
+            <p id="trigger1">技術ブログ</p>
             <a href="https://mmtomitomimm.blogspot.com/" target="_blank">
               <img src="~/assets/images/blog.png" />
             </a>
@@ -24,8 +24,9 @@
         </div>
         <div class="article-content">
           <div class="article-image">
-            <p>ユーザー管理アプリ</p>
+            <p id="trigger2">ユーザー管理アプリ</p>
             <a
+              id="image1"
               href="https://user-setting-app-20190502.herokuapp.com/"
               target="_blank"
             >
@@ -50,8 +51,12 @@
         </div>
         <div class="article-content">
           <div class="article-image">
-            <p>ブログアプリ</p>
-            <a href="https://calm-beach-62772.herokuapp.com/" target="_blank">
+            <p id="trigger3">ブログアプリ</p>
+            <a
+              id="image2"
+              href="https://calm-beach-62772.herokuapp.com/"
+              target="_blank"
+            >
               <img src="~/assets/images/blog-app.png" />
             </a>
           </div>
@@ -74,6 +79,7 @@
           <div class="article-image">
             <p>GitHub</p>
             <iframe
+              id="image3"
               title="tominagamaya - Overview"
               src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fgithub.com%2Ftominagamaya"
               frameborder="0"
@@ -93,6 +99,55 @@
     </section>
   </div>
 </template>
+<script>
+export default {
+  mounted() {
+    const scene1 = this.$scrollmagic
+      .scene({
+        triggerElement: '#trigger1',
+        triggerHook: 0.5,
+        offset: 100,
+        duration: 300,
+        reverse: false
+      })
+      .setTween('#image1', {
+        css: {
+          opacity: '1'
+        }
+      })
+
+    const scene2 = this.$scrollmagic
+      .scene({
+        triggerElement: '#trigger2',
+        triggerHook: 0.5,
+        offset: 100,
+        duration: 300,
+        reverse: false
+      })
+      .setTween('#image2', {
+        css: {
+          opacity: '1'
+        }
+      })
+
+    const scene3 = this.$scrollmagic
+      .scene({
+        triggerElement: '#trigger3',
+        triggerHook: 0.5,
+        offset: 100,
+        duration: 300,
+        reverse: false
+      })
+      .setTween('#image3', {
+        css: {
+          opacity: '1'
+        }
+      })
+
+    this.$scrollmagic.addScene([scene1, scene2, scene3])
+  }
+}
+</script>
 <style scoped lang="scss">
 .article-body {
   min-height: 300px;
@@ -146,6 +201,12 @@
   .image-link {
     font-size: 13px;
     padding-left: 3px;
+  }
+
+  #image1,
+  #image2,
+  #image3 {
+    opacity: 0;
   }
 }
 .article-about {
