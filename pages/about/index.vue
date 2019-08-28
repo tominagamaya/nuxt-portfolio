@@ -2,6 +2,8 @@
   <div class="page-about">
     <section>
       <h2 class="section-title effect-fade-side">About Me</h2>
+      <balloon :x="-150" :y="150" :scale-x="1.0" :scale-y="1.0" :rotate="0">
+      </balloon>
       <div class="article-body about">
         <p>
           独立系SIer（4年）からユーザー向け事業会社でSESとして勤務（2年）を経て、
@@ -47,6 +49,14 @@
     </section>
   </div>
 </template>
+<script>
+import Balloon from '~/components/Balloon'
+export default {
+  components: {
+    Balloon
+  }
+}
+</script>
 <style scoped lang="scss">
 .article-body {
   min-height: 300px;
