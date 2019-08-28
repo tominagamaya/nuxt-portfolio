@@ -8,8 +8,8 @@ export default {}
 .img-balloon {
   position: absolute;
   top: 150px;
-  right: 150px;
-  width: 100px;
+  right: 100px;
+  width: 200px;
 }
 .shake {
   animation: animationShake 4s infinite;
