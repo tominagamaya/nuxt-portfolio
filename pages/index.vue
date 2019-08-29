@@ -19,46 +19,39 @@
         Works
       </h2>
       <article-body class="works">
-        <div class="article-content">
-          <p>技術ブログ</p>
-          <a
-            id="work-image"
-            href="https://mmtomitomimm.blogspot.com/"
-            target="_blank"
-          >
-            <img src="~/assets/images/blog.png" />
-          </a>
-        </div>
-        <div class="article-content">
-          <p>ユーザー管理アプリ</p>
-          <a
-            id="work-image"
-            href="https://user-setting-app-20190502.herokuapp.com/"
-            target="_blank"
-          >
-            <img src="~/assets/images/manage-app.png" />
-          </a>
-        </div>
-        <div class="article-content">
-          <p>ブログアプリ</p>
-          <a
-            id="work-image"
-            href="https://calm-beach-62772.herokuapp.com/"
-            target="_blank"
-          >
-            <img src="~/assets/images/blog-app.png" />
-          </a>
-        </div>
+        <article-content
+          id="work-image"
+          name="技術ブログ"
+          url="https://mmtomitomimm.blogspot.com/"
+          file="blog.png"
+        >
+        </article-content>
+        <article-content
+          id="work-image"
+          name="ユーザー管理アプリ"
+          url="https://user-setting-app-20190502.herokuapp.com/"
+          file="manage-app.png"
+        >
+        </article-content>
+        <article-content
+          id="work-image"
+          name="ブログアプリ"
+          url="https://calm-beach-62772.herokuapp.com/"
+          file="blog-app.png"
+        >
+        </article-content>
       </article-body>
     </section>
   </div>
 </template>
 <script>
 import ArticleBody from '~/components/common/ArticleBody'
+import ArticleContent from '~/components/common/ArticleContent'
 import ImageProfile from '~/components/ImageProfile'
 export default {
   components: {
     ArticleBody,
+    ArticleContent,
     ImageProfile
   },
   mounted() {
@@ -95,24 +88,7 @@ export default {
   padding: 50px 30px 50px 80px;
 }
 
-.article-content {
-  height: 200px;
-  display: inline-block;
-  padding-right: 50px;
-
-  p {
-    padding-bottom: 15px;
-  }
-
-  img {
-    height: 150px;
-    box-shadow: 12px 20px 25px 0 rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: 0;
-  }
-
-  #work-image {
-    opacity: 0;
-  }
+#work-image {
+  opacity: 0;
 }
 </style>
