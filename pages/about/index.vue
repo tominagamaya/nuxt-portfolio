@@ -3,7 +3,7 @@
     <section>
       <h2 class="section-title effect-fade-side">About Me</h2>
       <balloon></balloon>
-      <div class="article-body about">
+      <article-body class="about">
         <p>
           独立系SIer（4年）からユーザー向け事業会社でSESとして勤務（2年）を経て、
           事業会社のWebエンジニア になりました。<br />
@@ -27,11 +27,11 @@
           自分の知らなかったことについて話を聞いたり、
           新しいことを学ぶのが好きです。
         </p>
-      </div>
+      </article-body>
     </section>
     <section>
       <h2 class="section-title effect-fade-side">Skils</h2>
-      <div class="article-body skils">
+      <article-body class="skils">
         <p class="article-detail">実務経験がある技術です。</p>
         <ul>
           <li>Java8（Spring）</li>
@@ -44,49 +44,24 @@
           <li>Docker</li>
           <li>DDD（設計思想）</li>
         </ul>
-      </div>
+      </article-body>
     </section>
   </div>
 </template>
 <script>
+import ArticleBody from '~/components/common/ArticleBody'
 import Balloon from '~/components/Balloon'
 export default {
   components: {
+    ArticleBody,
     Balloon
   }
 }
 </script>
 <style scoped lang="scss">
-.article-body {
-  min-height: 300px;
-  background-color: #fff;
-  box-shadow: 1px 27px 39px 0 rgba(0, 0, 0, 0.07);
-
-  &.about,
-  &.skils {
-    padding: 50px 90px;
-  }
-
-  h3 {
-    font-size: 20px;
-    margin: 30px 0 20px;
-  }
-
-  p {
-    line-height: 2;
-
-    + p {
-      margin-top: 20px;
-    }
-  }
-
-  ul {
-    padding-left: 10px;
-  }
-  li {
-    list-style-type: square;
-    line-height: 35px;
-  }
+.about,
+.skils {
+  padding: 50px 90px;
 }
 .article-detail {
   padding-bottom: 15px;

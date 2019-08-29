@@ -24,7 +24,7 @@
   letter-spacing: 2.5px;
 }
 .header-link {
-  color: #3a3a3a;
+  color: $color-dark-gray;
 }
 .header-inner {
   height: 60px;

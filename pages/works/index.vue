@@ -2,7 +2,7 @@
   <div class="page-about">
     <section>
       <h2 class="section-title effect-fade-side">Works</h2>
-      <div class="article-body works">
+      <article-body class="works">
         <div class="article-content">
           <p class="article-detail">
             日常的に更新しているブログや、作成したアプリです。<br />
@@ -95,12 +95,16 @@
             </a>
           </div>
         </div>
-      </div>
+      </article-body>
     </section>
   </div>
 </template>
 <script>
+import ArticleBody from '~/components/common/ArticleBody'
 export default {
+  components: {
+    ArticleBody
+  },
   mounted() {
     const scene1 = this.$scrollmagic
       .scene({
@@ -149,27 +153,8 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-.article-body {
-  min-height: 300px;
-  background-color: #fff;
-  box-shadow: 1px 27px 39px 0 rgba(0, 0, 0, 0.07);
-
-  &.works {
-    padding: 50px 30px 50px 80px;
-  }
-
-  h3 {
-    font-size: 20px;
-    margin: 30px 0 20px;
-  }
-
-  p {
-    line-height: 2;
-
-    + p {
-      margin-top: 20px;
-    }
-  }
+.works {
+  padding: 50px 30px 50px 80px;
 }
 .article-content {
   padding-bottom: 50px;

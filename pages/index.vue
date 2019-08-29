@@ -2,23 +2,25 @@
   <div class="page-index">
     <section>
       <h2 class="section-title effect-fade-side">Maya Tominaga</h2>
-      <div class="article-body profile">
-        <p>独立系SIerから事業会社のWebエンジニアになりました。</p>
-        <p>サーバーサイド、フロントエンドまで幅広く経験。</p>
-        <p>ユーザー目線にたったデザインを含むフロントエンド開発が得意。</p>
-        <p>技術ブログを書くことが好きで、週1の頻度で更新しています。</p>
-        <p>テニスが好きでスクールに通っています。</p>
-        <p>継続的な努力と想いやりを大切にしています。</p>
+      <article-body class="profile">
+        <p>
+          独立系SIerから事業会社のWebエンジニアになりました。
+          サーバーサイド、フロントエンドまで幅広く経験。
+          ユーザー目線にたったデザインを含むフロントエンド開発が得意。
+          技術ブログを書くことが好きで、週1の頻度で更新しています。
+          テニスが好きでスクールに通っています。
+          継続的な努力と想いやりを大切にしています。
+        </p>
         <div class="about-image effect-fade">
           <img src="~/assets/images/me.png" alt="Maya Tominaga" />
         </div>
-      </div>
+      </article-body>
     </section>
     <section>
       <h2 id="work-trigger" class="section-title effect-fade-side">
         Works
       </h2>
-      <div class="article-body works">
+      <article-body class="works">
         <div class="article-content">
           <p>技術ブログ</p>
           <a
@@ -49,12 +51,16 @@
             <img src="~/assets/images/blog-app.png" />
           </a>
         </div>
-      </div>
+      </article-body>
     </section>
   </div>
 </template>
 <script>
+import ArticleBody from '~/components/common/ArticleBody'
 export default {
+  components: {
+    ArticleBody
+  },
   mounted() {
     const scene1 = this.$scrollmagic
       .scene({
@@ -77,39 +83,18 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.article-body {
-  min-height: 300px;
-  background-color: #fff;
-  box-shadow: 1px 27px 39px 0 rgba(0, 0, 0, 0.07);
-
-  &.profile {
-    padding: 50px 400px 50px 90px;
-  }
-
-  &.works {
-    padding: 50px 30px 50px 80px;
-  }
-
-  h3 {
-    font-size: 20px;
-    margin: 30px 0 20px;
-  }
+.profile {
+  padding: 50px 400px 50px 90px;
 
   p {
-    line-height: 1;
-
-    + p {
-      margin-top: 20px;
-    }
-  }
-
-  img {
-    max-width: 100%;
+    line-height: 45px;
   }
 }
-
+.works {
+  padding: 50px 30px 50px 80px;
+}
 .about-image {
-  background-color: #fbe6db;
+  background-color: $color-light-pink;
   opacity: 1;
   position: absolute;
   display: block;
