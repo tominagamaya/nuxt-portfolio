@@ -11,7 +11,7 @@
           テニスが好きでスクールに通っています。
           継続的な努力と想いやりを大切にしています。
         </p>
-        <div class="about-image effect-fade">
+        <div class="about-image effect-fade-top">
           <img src="~/assets/images/me.png" alt="Maya Tominaga" />
         </div>
       </article-body>
@@ -90,9 +90,11 @@ export default {
     line-height: 45px;
   }
 }
+
 .works {
   padding: 50px 30px 50px 80px;
 }
+
 .about-image {
   background-color: $color-light-pink;
   opacity: 1;
@@ -105,6 +107,7 @@ export default {
   box-shadow: 1px 27px 39px 0 rgba(0, 0, 0, 0.07);
   max-width: 20%;
 }
+
 .article-content {
   height: 200px;
   display: inline-block;
@@ -123,39 +126,6 @@ export default {
 
   #work-image {
     opacity: 0;
-  }
-}
-.effect-fade {
-  animation-name: fade-in-top;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-}
-
-@keyframes fade-in-top {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.effect-fade-side {
-  animation-name: fade-in-side;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-}
-
-@keyframes fade-in-side {
-  from {
-    opacity: 0;
-    transform: translate3d(10%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 </style>

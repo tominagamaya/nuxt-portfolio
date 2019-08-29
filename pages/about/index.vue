@@ -66,20 +66,4 @@ export default {
 .article-detail {
   padding-bottom: 15px;
 }
-.effect-fade-side {
-  animation-name: fade-in-side;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-}
-
-@keyframes fade-in-side {
-  from {
-    opacity: 0;
-    transform: translate3d(10%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 </style>

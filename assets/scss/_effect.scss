@@ -1,0 +1,58 @@
+.effect-fade-top {
+  animation-name: fade-in-top;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fade-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.effect-fade-side {
+  animation-name: fade-in-side;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fade-in-side {
+  from {
+    opacity: 0;
+    transform: translate3d(10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.effect-shake {
+  animation: shake 4s infinite, fade-in-top 2s 1;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+@keyframes fade-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(-20px), rotate(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(-15deg);
+  }
+}

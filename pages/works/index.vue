@@ -156,9 +156,11 @@ export default {
 .works {
   padding: 50px 30px 50px 80px;
 }
+
 .article-content {
   padding-bottom: 50px;
 }
+
 .article-image {
   height: 200px;
   width: 450px;
@@ -194,6 +196,7 @@ export default {
     opacity: 0;
   }
 }
+
 .article-about {
   display: inline-block;
   padding-top: 35px;
@@ -211,24 +214,9 @@ export default {
     }
   }
 }
+
 .article-detail {
   font-size: 14px;
   padding-bottom: 45px;
-}
-.effect-fade-side {
-  animation-name: fade-in-side;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-}
-
-@keyframes fade-in-side {
-  from {
-    opacity: 0;
-    transform: translate3d(10%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 </style>
