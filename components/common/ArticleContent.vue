@@ -9,9 +9,18 @@
 <script>
 export default {
   props: {
-    name: String,
-    url: String,
-    file: String
+    name: {
+      required: true,
+      type: String
+    },
+    url: {
+      required: true,
+      type: String
+    },
+    file: {
+      required: true,
+      type: String
+    }
   },
   methods: {
     getImage() {

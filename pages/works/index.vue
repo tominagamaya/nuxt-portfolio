@@ -3,18 +3,19 @@
     <section>
       <h2 class="section-title effect-fade-side">Works</h2>
       <article-body class="works">
-        <div class="article-content">
-          <p class="article-detail">
+        <div class="work-content">
+          <p class="work-detail">
             日常的に更新しているブログや、作成したアプリです。<br />
             画像をクリックするとリンク先に移動します。
           </p>
-          <div class="article-image">
-            <p id="trigger1">技術ブログ</p>
-            <a href="https://mmtomitomimm.blogspot.com/" target="_blank">
-              <img src="~/assets/images/blog.png" />
-            </a>
-          </div>
-          <div class="article-about">
+          <image-work
+            trigger-id="trigger1"
+            name="技術ブログ"
+            url="https://mmtomitomimm.blogspot.com/"
+            file="blog.png"
+          >
+          </image-work>
+          <div class="work-about">
             <p>
               2017年11月から始めて、週1の頻度で更新しています。
               主に試した技術や読んだ書籍、参加したイベントなど
@@ -22,18 +23,16 @@
             </p>
           </div>
         </div>
-        <div class="article-content">
-          <div class="article-image">
-            <p id="trigger2">ユーザー管理アプリ</p>
-            <a
-              id="image1"
-              href="https://user-setting-app-20190502.herokuapp.com/"
-              target="_blank"
-            >
-              <img src="~/assets/images/manage-app.png" />
-            </a>
-          </div>
-          <div class="article-about">
+        <div class="work-content">
+          <image-work
+            trigger-id="trigger2"
+            image-id="image1"
+            name="ユーザー管理アプリ"
+            url="https://user-setting-app-20190502.herokuapp.com/"
+            file="manage-app.png"
+          >
+          </image-work>
+          <div class="work-about">
             <div>
               <p>
                 レイアウトから実装まで全て自分で考えて作成しました。
@@ -49,18 +48,16 @@
             </ul>
           </div>
         </div>
-        <div class="article-content">
-          <div class="article-image">
-            <p id="trigger3">ブログアプリ</p>
-            <a
-              id="image2"
-              href="https://calm-beach-62772.herokuapp.com/"
-              target="_blank"
-            >
-              <img src="~/assets/images/blog-app.png" />
-            </a>
-          </div>
-          <div class="article-about">
+        <div class="work-content">
+          <image-work
+            trigger-id="trigger3"
+            image-id="image2"
+            name="ブログアプリ"
+            url="https://calm-beach-62772.herokuapp.com/"
+            file="blog-app.png"
+          >
+          </image-work>
+          <div class="work-about">
             <div>
               <p>
                 動画を参考にしてWebアプリケーションを作成しました。
@@ -75,9 +72,8 @@
             </ul>
           </div>
         </div>
-        <div class="article-content">
-          <div class="article-image">
-            <p>GitHub</p>
+        <div class="work-content">
+          <image-work url="https://github.com/tominagamaya">
             <iframe
               id="image3"
               title="tominagamaya - Overview"
@@ -86,14 +82,7 @@
               scrolling="no"
             >
             </iframe>
-            <a
-              class="image-link"
-              href="https://github.com/tominagamaya"
-              target="_blank"
-            >
-              github.com
-            </a>
-          </div>
+          </image-work>
         </div>
       </article-body>
     </section>
@@ -101,9 +90,11 @@
 </template>
 <script>
 import ArticleBody from '~/components/common/ArticleBody'
+import ImageWork from '~/components/ImageWork'
 export default {
   components: {
-    ArticleBody
+    ArticleBody,
+    ImageWork
   },
   mounted() {
     const scene1 = this.$scrollmagic
@@ -157,47 +148,11 @@ export default {
   padding: 50px 30px 50px 80px;
 }
 
-.article-content {
+.work-content {
   padding-bottom: 50px;
 }
 
-.article-image {
-  height: 200px;
-  width: 450px;
-  margin-bottom: 10px;
-  display: inline-block;
-
-  p {
-    padding-bottom: 15px;
-  }
-
-  img {
-    height: 150px;
-    box-shadow: 12px 20px 25px 0 rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: 0;
-  }
-
-  iframe {
-    display: block;
-    width: 83%;
-    box-shadow: 12px 20px 25px 0 rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-  }
-
-  .image-link {
-    font-size: 13px;
-    padding-left: 3px;
-  }
-
-  #image1,
-  #image2,
-  #image3 {
-    opacity: 0;
-  }
-}
-
-.article-about {
+.work-about {
   display: inline-block;
   padding-top: 35px;
   vertical-align: top;
@@ -215,7 +170,7 @@ export default {
   }
 }
 
-.article-detail {
+.work-detail {
   font-size: 14px;
   padding-bottom: 45px;
 }
