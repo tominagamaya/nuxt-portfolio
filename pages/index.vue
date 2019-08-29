@@ -11,9 +11,7 @@
           テニスが好きでスクールに通っています。
           継続的な努力と想いやりを大切にしています。
         </p>
-        <div class="about-image effect-fade-top">
-          <img src="~/assets/images/me.png" alt="Maya Tominaga" />
-        </div>
+        <image-profile></image-profile>
       </article-body>
     </section>
     <section>
@@ -57,9 +55,11 @@
 </template>
 <script>
 import ArticleBody from '~/components/common/ArticleBody'
+import ImageProfile from '~/components/ImageProfile'
 export default {
   components: {
-    ArticleBody
+    ArticleBody,
+    ImageProfile
   },
   mounted() {
     const scene1 = this.$scrollmagic
@@ -93,19 +93,6 @@ export default {
 
 .works {
   padding: 50px 30px 50px 80px;
-}
-
-.about-image {
-  background-color: $color-light-pink;
-  opacity: 1;
-  position: absolute;
-  display: block;
-  right: 160px;
-  top: 140px;
-  border-radius: 4px;
-  border: 0;
-  box-shadow: 1px 27px 39px 0 rgba(0, 0, 0, 0.07);
-  max-width: 20%;
 }
 
 .article-content {
