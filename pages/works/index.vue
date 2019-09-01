@@ -179,5 +179,8 @@ export default {
   .work-about p {
     line-height: 30px;
   }
+  .works {
+    padding: 50px 30px;
+  }
 }
 </style>

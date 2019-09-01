@@ -77,8 +77,6 @@ export default {
 
 <style scoped lang="scss">
 .profile {
-  padding: 50px 90px;
-
   p {
     line-height: 45px;
   }
@@ -93,7 +91,7 @@ export default {
 }
 
 @media screen and (max-width: 1140px) {
-  .profile {
+  .article-body {
     text-align: center;
     padding: 320px 30px 30px 30px;
 
@@ -101,6 +99,9 @@ export default {
       font-size: 15px;
       line-height: 30px;
     }
+  }
+  .works {
+    padding: 50px 30px 50px 30px;
   }
 }
 </style>

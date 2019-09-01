@@ -8,6 +8,7 @@
   min-height: 300px;
   background-color: $color-white;
   box-shadow: 1px 27px 39px 0 rgba(0, 0, 0, 0.07);
+  padding: 50px 90px;
 
   h3 {
     font-size: 20px;
@@ -33,6 +34,16 @@
   li {
     list-style-type: square;
     line-height: 35px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .article-body {
+    padding: 50px 30px;
+
+    p {
+      font-size: 15px;
+      line-height: 30px;
+    }
   }
 }
 </style>

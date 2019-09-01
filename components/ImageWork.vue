@@ -3,7 +3,7 @@
     <p :id="triggerId">{{ name }}</p>
     <slot></slot>
     <a :id="imageId" :href="url" target="_blank">
-      <img :src="getImage()" />
+      <img v-if="getImage()" :src="getImage()" />
     </a>
   </div>
 </template>
@@ -55,6 +55,7 @@ export default {
 
   img {
     width: 240px;
+    height: 150px;
     box-shadow: 12px 20px 25px 0 rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0;

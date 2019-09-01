@@ -51,6 +51,7 @@ export default {
 }
 @media screen and (max-width: 1140px) {
   .article-content {
+    padding-right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
