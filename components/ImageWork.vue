@@ -45,8 +45,7 @@ export default {
 </script>
 <style scoped lang="scss">
 .work-image {
-  height: 200px;
-  width: 450px;
+  width: 350px;
   margin-bottom: 10px;
   display: inline-block;
 
@@ -55,7 +54,7 @@ export default {
   }
 
   img {
-    height: 150px;
+    width: 240px;
     box-shadow: 12px 20px 25px 0 rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0;
@@ -63,7 +62,7 @@ export default {
 
   iframe {
     display: block;
-    width: 83%;
+    width: 240px;
     box-shadow: 12px 20px 25px 0 rgba(0, 0, 0, 0.15);
     border-radius: 4px;
   }

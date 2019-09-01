@@ -156,7 +156,7 @@ export default {
   display: inline-block;
   padding-top: 35px;
   vertical-align: top;
-  max-width: 55%;
+  max-width: 700px;
 
   .detail {
     font-size: 14px;
@@ -165,7 +165,7 @@ export default {
 
     li {
       padding-top: 10px;
-      line-height: 12px;
+      line-height: 14px;
     }
   }
 }
@@ -173,5 +173,11 @@ export default {
 .work-detail {
   font-size: 14px;
   padding-bottom: 45px;
+}
+
+@media screen and (max-width: 700px) {
+  .work-about p {
+    line-height: 30px;
+  }
 }
 </style>
