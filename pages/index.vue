@@ -3,6 +3,7 @@
     <section>
       <h2 class="section-title effect-fade-side">Maya Tominaga</h2>
       <article-body class="profile">
+        <image-profile></image-profile>
         <p>
           独立系SIerから事業会社のWebエンジニアになりました。<br />
           サーバーサイド、フロントエンドまで幅広く経験。<br />
@@ -11,7 +12,6 @@
           テニスが好きでスクールに通っています。<br />
           継続的な努力と想いやりを大切にしています。<br />
         </p>
-        <image-profile></image-profile>
       </article-body>
     </section>
     <section>
@@ -77,7 +77,7 @@ export default {
 
 <style scoped lang="scss">
 .profile {
-  padding: 50px 400px 50px 90px;
+  padding: 50px 90px;
 
   p {
     line-height: 45px;
@@ -90,5 +90,16 @@ export default {
 
 #work-image {
   opacity: 0;
+}
+
+@media screen and (max-width: 1140px) {
+  .profile {
+    padding: 30px;
+
+    p {
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
 }
 </style>
