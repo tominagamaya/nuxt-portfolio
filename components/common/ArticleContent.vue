@@ -1,9 +1,11 @@
 <template>
   <div class="article-content">
-    <p>{{ name }}</p>
-    <a :href="url" target="_blank">
-      <img :src="getImage()" />
-    </a>
+    <div>
+      <p>{{ name }}</p>
+      <a :href="url" target="_blank">
+        <img :src="getImage()" />
+      </a>
+    </div>
   </div>
 </template>
 <script>
@@ -33,7 +35,7 @@ export default {
 .article-content {
   height: 200px;
   display: inline-block;
-  padding-right: 50px;
+  padding-right: 11%;
 
   p {
     padding-bottom: 15px;
@@ -41,9 +43,18 @@ export default {
 
   img {
     height: 150px;
+    width: 240px;
     box-shadow: 12px 20px 25px 0 rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .article-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 </style>

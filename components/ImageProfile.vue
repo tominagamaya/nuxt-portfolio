@@ -17,12 +17,15 @@
   width: 290px;
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1140px) {
   .about-image {
-    position: relative;
+    position: absolute;
+    top: 170px;
+    right: 0;
+    bottom: 0;
     left: 0;
-    top: 0;
-    margin-bottom: 50px;
+    margin: 0 auto;
+    height: 290px;
   }
 }
 </style>

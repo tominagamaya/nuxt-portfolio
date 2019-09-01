@@ -94,7 +94,8 @@ export default {
 
 @media screen and (max-width: 1140px) {
   .profile {
-    padding: 30px;
+    text-align: center;
+    padding: 320px 30px 30px 30px;
 
     p {
       font-size: 15px;
