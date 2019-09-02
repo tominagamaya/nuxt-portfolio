@@ -29,11 +29,11 @@ export default {
 <style scoped lang="scss">
 .img-balloon {
   position: absolute;
-  top: 150px;
-  right: 100px;
+  top: 100px;
+  right: 5%;
 }
 
 #img-balloon {
-  width: 200px;
+  width: 15%;
 }
 </style>
