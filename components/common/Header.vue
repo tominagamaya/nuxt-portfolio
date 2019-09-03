@@ -25,6 +25,10 @@
 }
 .header-link {
   color: $color-dark-gray;
+
+  &:hover {
+    color: $color-gray;
+  }
 }
 .header-inner {
   height: 60px;
