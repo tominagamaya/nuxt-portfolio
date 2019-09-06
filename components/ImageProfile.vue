@@ -1,5 +1,5 @@
 <template>
-  <div class="about-image effect-fade-top">
+  <div class="about-image effect-delay-fade-top">
     <img src="~/assets/images/me.png" alt="Maya Tominaga" />
   </div>
 </template>

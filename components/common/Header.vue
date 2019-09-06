@@ -44,18 +44,24 @@
     animation-name: cssFadeIn;
     animation-duration: 2s;
     animation-iteration-count: 1;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
   }
 
   li:nth-child(2) {
     animation-name: cssFadeIn;
     animation-duration: 2.5s;
     animation-iteration-count: 1;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
   }
 
   li:nth-child(3) {
     animation-name: cssFadeIn;
     animation-duration: 3s;
     animation-iteration-count: 1;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
   }
 }
 @keyframes cssFadeIn {
