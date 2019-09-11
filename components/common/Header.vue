@@ -15,6 +15,7 @@
 </template>
 <style scoped lang="scss">
 .header {
+  z-index: 1;
   position: absolute;
   top: 30px;
   right: 100px;

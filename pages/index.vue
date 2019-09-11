@@ -1,7 +1,7 @@
 <template>
   <div class="page-index">
     <div class="title-opening">
-      <p id="title">Maya's Portforio</p>
+      <logo id="title"></logo>
     </div>
     <div class="effect-delay-display">
       <section>
@@ -54,11 +54,13 @@ import { TweenMax, TimelineMax } from 'gsap'
 import ArticleBody from '~/components/common/ArticleBody'
 import ArticleContent from '~/components/common/ArticleContent'
 import ImageProfile from '~/components/ImageProfile'
+import Logo from '~/components/Logo'
 export default {
   components: {
     ArticleBody,
     ArticleContent,
-    ImageProfile
+    ImageProfile,
+    Logo
   },
   mounted() {
     const timeline = new TimelineMax()
@@ -66,24 +68,17 @@ export default {
       .add([
         TweenMax.to('#title', 0.1, {
           css: {
-            position: 'absolute',
-            opacity: '0',
-            width: '100px',
-            right: '40%',
-            height: '50px',
-            overflow: 'hidden'
+            opacity: '0'
           }
         })
       ])
       .to('#title', 1, {
         css: {
-          width: '120px',
-          opacity: '0.5'
+          opacity: '1'
         }
       })
       .to('#title', 2, {
         css: {
-          width: '300px',
           opacity: '1'
         }
       })
@@ -115,14 +110,24 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.title-opening {
+@keyframes drawIn {
+  0% {
+    stroke: transparent;
+    stroke-dashoffset: 10000;
+  }
+  75% {
+    stroke: white;
+  }
+}
+
+svg {
   position: absolute;
-  top: 50vh;
+  top: 0;
+  right: 50vw;
+  bottom: 0;
+  left: 0;
   margin: auto;
-  text-align: center;
-  width: 85vw;
-  font-size: 30px;
-  word-break: break-all;
+  width: 75%;
 }
 
 .profile {

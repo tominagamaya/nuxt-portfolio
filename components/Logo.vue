@@ -1,79 +1,136 @@
 <template>
-  <div class="VueToNuxtLogo">
-    <div class="Triangle Triangle--two" />
-    <div class="Triangle Triangle--one" />
-    <div class="Triangle Triangle--three" />
-    <div class="Triangle Triangle--four" />
-  </div>
+  <svg
+    version="1.0"
+    xmlns="http://www.w3.org/2000/svg"
+    height="600pt"
+    viewBox="0 0 600 200"
+    preserveAspectRatio="xMidYMid meet"
+  >
+    <g transform="translate(0,400.000000) scale(0.1,-0.1)" fill="none">
+      <path
+        class="a"
+        d="M3374 3067 c-3 -8 -4 -34 -2 -58 2 -36 7 -44 23 -44 18 0 20 7 20 55
+  0 44 -3 55 -18 58 -9 2 -20 -3 -23 -11z"
+      />
+      <path
+        class="a"
+        d="M3794 3046 c-16 -12 -20 -31 -24 -133 -7 -148 -4 -163 25 -163 26 0
+  38 24 34 68 -4 36 7 52 35 52 35 0 86 57 86 96 0 66 -102 119 -156 80z m84
+  -52 c27 -19 28 -38 2 -64 -34 -34 -50 -26 -50 23 0 60 9 68 48 41z"
+      />
+      <path
+        class="a"
+        d="M4572 3037 c-12 -13 -22 -33 -22 -45 0 -11 -11 -32 -25 -46 -31 -31
+  -31 -34 -2 -45 22 -8 23 -14 19 -70 -5 -71 3 -111 23 -111 19 0 27 30 25 98
+  -2 81 -2 82 19 82 24 0 45 25 37 45 -3 8 -14 15 -25 15 -44 0 -24 39 27 55 36
+  11 24 39 -18 43 -27 2 -41 -3 -58 -21z"
+      />
+      <path
+        class="a"
+        d="M4897 3053 c-2 -4 -4 -74 -4 -155 l0 -148 23 0 c26 0 25 -10 29 268
+  0 30 -4 38 -22 40 -11 2 -23 0 -26 -5z"
+      />
+      <path
+        class="a"
+        d="M2528 3038 c-9 -8 -18 -36 -21 -67 -4 -29 -10 -58 -15 -65 -5 -6 -15
+  -39 -22 -74 -12 -57 -11 -65 4 -80 16 -16 18 -16 32 2 8 11 14 36 14 56 0 43
+  28 89 41 69 5 -8 9 -31 9 -52 0 -48 15 -77 39 -77 18 0 34 40 51 123 3 15 9
+  29 14 30 10 2 35 -83 36 -119 0 -27 21 -46 39 -35 13 8 8 45 -18 146 -6 22
+  -11 60 -11 85 0 49 -13 70 -41 70 -13 0 -19 -12 -24 -42 -12 -72 -31 -139 -40
+  -141 -11 -3 -33 61 -34 100 -1 37 -17 83 -29 83 -4 0 -15 -6 -24 -12z"
+      />
+      <path
+        class="a"
+        d="M4995 3030 c-9 -27 10 -49 36 -43 27 7 32 19 17 43 -16 26 -45 26
+  -53 0z"
+      />
+      <path
+        class="a"
+        d="M4370 2996 c0 -13 -10 -30 -22 -39 l-23 -15 26 -26 c25 -23 26 -29
+  22 -89 -5 -59 -4 -66 16 -77 39 -20 54 3 46 71 -8 72 -1 95 31 103 31 8 27 28
+  -7 36 -17 4 -25 14 -27 33 -3 22 -8 27 -33 27 -24 0 -29 -4 -29 -24z"
+      />
+      <path
+        class="a"
+        d="M3560 2968 c-47 -13 -70 -36 -70 -69 0 -32 31 -59 67 -59 14 0 23 -6
+  23 -15 0 -22 -23 -28 -64 -17 -47 14 -65 -5 -37 -39 15 -19 29 -24 64 -24 60
+  0 89 26 85 74 -2 29 -9 39 -35 51 -18 8 -33 23 -33 33 0 20 13 22 40 5 16 -10
+  22 -10 34 2 13 12 13 19 3 40 -14 29 -29 32 -77 18z"
+      />
+      <path
+        class="a"
+        d="M3221 2957 c-43 -22 -66 -64 -65 -118 1 -62 27 -93 76 -91 92 5 103
+  7 99 22 -2 8 -6 50 -9 92 -2 43 -10 82 -16 86 -21 17 -61 21 -85 9z m43 -63
+  c16 -41 3 -94 -23 -94 -40 0 -55 57 -24 92 20 22 39 23 47 2z"
+      />
+      <path
+        class="a"
+        d="M4245 2962 c-11 -2 -25 -8 -32 -14 -7 -6 -14 -5 -18 2 -3 5 -12 10
+  -20 10 -19 0 -27 -189 -8 -210 22 -24 38 4 35 61 -1 28 3 59 8 70 13 23 43 25
+  60 4 23 -28 40 -18 40 23 0 31 -5 41 -22 48 -13 6 -32 8 -43 6z"
+      />
+      <path
+        class="a"
+        d="M5145 2960 c-38 -15 -58 -48 -63 -105 -4 -50 -2 -57 26 -85 39 -39
+  66 -38 108 4 30 30 34 41 34 84 0 38 -5 55 -23 74 -28 30 -55 40 -82 28z m53
+  -98 c6 -57 -60 -80 -74 -27 -9 36 13 67 44 63 23 -2 28 -9 30 -36z"
+      />
+      <path
+        class="a"
+        d="M2807 2932 c-23 -24 -27 -37 -27 -88 0 -81 14 -94 104 -94 l68 0 -7
+  28 c-4 15 -8 58 -11 96 -4 77 -11 86 -65 86 -26 0 -42 -7 -62 -28z m81 -72 c2
+  -36 -1 -47 -18 -58 -17 -10 -23 -9 -40 8 -25 25 -25 41 1 74 31 40 53 30 57
+  -24z"
+      />
+      <path
+        class="a"
+        d="M2953 2943 c-4 -9 0 -28 8 -42 8 -14 26 -45 39 -68 l24 -43 -22 -44
+  c-26 -51 -28 -84 -6 -93 18 -7 53 31 54 58 0 18 68 179 81 194 17 18 10 55
+  -10 55 -24 0 -37 -17 -45 -57 -6 -25 -33 -52 -41 -41 -1 2 -12 24 -24 51 -23
+  48 -47 60 -58 30z"
+      />
+      <path
+        class="a"
+        d="M4005 2942 c-11 -9 -29 -36 -39 -60 -19 -42 -19 -43 0 -80 38 -71
+  104 -76 144 -10 26 42 25 92 -1 134 -16 27 -27 34 -52 34 -18 -1 -41 -8 -52
+  -18z m85 -88 c0 -8 -9 -23 -20 -34 -16 -16 -25 -18 -40 -10 -32 17 -25 80 10
+  92 16 7 50 -26 50 -48z"
+      />
+      <path
+        class="a"
+        d="M4713 2935 c-36 -41 -46 -86 -29 -127 31 -72 90 -84 138 -28 35 42
+  37 97 7 146 -17 29 -26 34 -57 34 -27 0 -43 -7 -59 -25z m91 -89 c-16 -53 -74
+  -52 -74 2 0 31 9 47 30 54 22 8 52 -30 44 -56z"
+      />
+      <path
+        class="a"
+        d="M4996 2944 c-3 -9 -6 -49 -6 -89 0 -40 3 -80 6 -89 8 -20 34 -21 35
+  -1 5 51 6 163 2 178 -5 21 -29 22 -37 1z"
+      />
+    </g>
+  </svg>
 </template>
-
-<style>
-.VueToNuxtLogo {
-  display: inline-block;
-  animation: turn 2s linear forwards 1s;
-  transform: rotateX(180deg);
-  position: relative;
-  overflow: hidden;
-  height: 180px;
-  width: 245px;
+<style scoped lang="scss">
+svg .a {
+  stroke: $color-light-pink;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  animation: stroke-reveal 2s ease infinite;
 }
 
-.Triangle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-}
-
-.Triangle--one {
-  border-left: 105px solid transparent;
-  border-right: 105px solid transparent;
-  border-bottom: 180px solid #41b883;
-}
-
-.Triangle--two {
-  top: 30px;
-  left: 35px;
-  animation: goright 0.5s linear forwards 3.5s;
-  border-left: 87.5px solid transparent;
-  border-right: 87.5px solid transparent;
-  border-bottom: 150px solid #3b8070;
-}
-
-.Triangle--three {
-  top: 60px;
-  left: 35px;
-  animation: goright 0.5s linear forwards 3.5s;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
-  border-bottom: 120px solid #35495e;
-}
-
-.Triangle--four {
-  top: 120px;
-  left: 70px;
-  animation: godown 0.5s linear forwards 3s;
-  border-left: 35px solid transparent;
-  border-right: 35px solid transparent;
-  border-bottom: 60px solid #fff;
-}
-
-@keyframes turn {
-  100% {
-    transform: rotateX(0deg);
+@keyframes stroke-reveal {
+  from {
+    stroke-dashoffset: 250;
+    fill: rgba(250, 205, 198, 0);
+    stroke-width: 1cm;
+    stroke-opacity: 0.6;
   }
-}
-
-@keyframes godown {
-  100% {
-    top: 180px;
-  }
-}
-
-@keyframes goright {
-  100% {
-    left: 70px;
+  to {
+    stroke-dashoffset: 0;
+    fill: rgba(250, 205, 198, 1);
+    stroke-width: 0;
+    stroke-opacity: 0;
   }
 }
 </style>
