@@ -30,7 +30,7 @@
   border-radius: 30px;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1220px) {
   .article-body p + p {
     font-size: 15px;
   }

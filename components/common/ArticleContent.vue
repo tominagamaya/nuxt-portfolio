@@ -49,7 +49,7 @@ export default {
     border: 0;
   }
 }
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1220px) {
   .article-content {
     padding-right: 0;
     display: flex;

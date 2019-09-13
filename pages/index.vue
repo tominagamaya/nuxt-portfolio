@@ -144,7 +144,7 @@ svg {
   opacity: 0;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1220px) {
   .article-body {
     text-align: center;
     padding: 320px 30px 30px 30px;

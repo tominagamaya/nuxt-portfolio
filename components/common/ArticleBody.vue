@@ -36,7 +36,7 @@
     line-height: 35px;
   }
 }
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1220px) {
   .article-body {
     padding: 50px 30px;
 

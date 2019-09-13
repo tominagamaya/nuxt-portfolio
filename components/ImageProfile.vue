@@ -14,10 +14,10 @@
   border-radius: 4px;
   border: 0;
   box-shadow: 1px 27px 39px 0 rgba(0, 0, 0, 0.07);
-  width: 290px;
+  width: 350px;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1220px) {
   .about-image {
     position: absolute;
     top: 170px;
@@ -25,7 +25,8 @@
     bottom: 0;
     left: 0;
     margin: 0 auto;
-    height: 290px;
+    width: 350px;
+    height: 270px;
   }
 }
 </style>
