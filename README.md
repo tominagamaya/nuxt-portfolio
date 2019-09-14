@@ -1,6 +1,6 @@
 # portfolio-app
 
-> My super Nuxt.js project
+https://tmaya-portfolio.netlify.com/
 
 ## Build Setup
 
