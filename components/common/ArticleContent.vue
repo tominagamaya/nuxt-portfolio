@@ -3,7 +3,11 @@
     <div>
       <p>{{ name }}</p>
       <a :href="url" target="_blank">
-        <img :src="getImage()" />
+        <img
+          :src="getImage()"
+          @mouseover="stopImage()"
+          @mouseleave="startImage()"
+        />
       </a>
     </div>
   </div>
@@ -22,11 +26,22 @@ export default {
     file: {
       required: true,
       type: String
+    },
+    parentRefs: {
+      type: Object,
+      required: false,
+      default: null
     }
   },
   methods: {
     getImage() {
       return require(`~/assets/images/${this.file}`)
+    },
+    stopImage() {
+      this.parentRefs.autoplay.stop()
+    },
+    startImage() {
+      this.parentRefs.autoplay.start()
     }
   }
 }
@@ -35,7 +50,8 @@ export default {
 .article-content {
   height: 200px;
   display: inline-block;
-  padding-right: 11%;
+  padding-left: 55px;
+  padding-bottom: 30px;
 
   p {
     padding-bottom: 15px;
@@ -51,7 +67,7 @@ export default {
 }
 @media screen and (max-width: 1220px) {
   .article-content {
-    padding-right: 0;
+    padding-left: 0;
     display: flex;
     justify-content: center;
     align-items: center;

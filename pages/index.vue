@@ -23,27 +23,41 @@
           Works
         </h2>
         <article-body class="works">
-          <article-content
-            id="work-image"
-            name="技術ブログ"
-            url="https://mmtomitomimm.blogspot.com/"
-            file="blog.png"
-          >
-          </article-content>
-          <article-content
-            id="work-image"
-            name="ユーザー管理アプリ"
-            url="https://user-setting-app-20190502.herokuapp.com/"
-            file="manage-app.png"
-          >
-          </article-content>
-          <article-content
-            id="work-image"
-            name="ブログアプリ"
-            url="https://calm-beach-62772.herokuapp.com/"
-            file="blog-app.png"
-          >
-          </article-content>
+          <swiper ref="mySwiper" :options="swiperOption">
+            <swiper-slide>
+              <article-content
+                id="work-image"
+                name="技術ブログ"
+                url="https://mmtomitomimm.blogspot.com/"
+                file="blog.png"
+                :parent-refs="parentRefs"
+              >
+              </article-content>
+            </swiper-slide>
+            <swiper-slide>
+              <article-content
+                id="work-image"
+                name="ユーザー管理アプリ"
+                url="https://user-setting-app-20190502.herokuapp.com/"
+                file="manage-app.png"
+                :parent-refs="parentRefs"
+              >
+              </article-content>
+            </swiper-slide>
+            <swiper-slide>
+              <article-content
+                id="work-image"
+                name="ブログアプリ"
+                url="https://calm-beach-62772.herokuapp.com/"
+                file="blog-app.png"
+                :parent-refs="parentRefs"
+              >
+              </article-content>
+            </swiper-slide>
+            <div slot="button-prev" class="swiper-button-prev"></div>
+            <div slot="button-next" class="swiper-button-next"></div>
+            <div slot="pagination" class="swiper-pagination"></div>
+          </swiper>
         </article-body>
       </section>
     </div>
@@ -62,7 +76,39 @@ export default {
     ImageProfile,
     Logo
   },
+  data() {
+    return {
+      parentRefs: null,
+      swiperOption: {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 5000
+        },
+        pagenation: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        breakpoints: {
+          1430: {
+            slidesPerView: 2,
+            spaceBetween: 10
+          },
+          950: {
+            slidesPerView: 1
+          }
+        }
+      }
+    }
+  },
   mounted() {
+    this.parentRefs = this.$refs.mySwiper.swiper
+
     const timeline = new TimelineMax()
     timeline
       .add([
@@ -142,6 +188,16 @@ svg {
 
 #work-image {
   opacity: 0;
+}
+
+.swiper-button-prev {
+  background-size: 15px 15px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23C0C0C0'%2F%3E%3C%2Fsvg%3E");
+}
+
+.swiper-button-next {
+  background-size: 15px 15px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23C0C0C0'%2F%3E%3C%2Fsvg%3E");
 }
 
 @media screen and (max-width: 1220px) {
