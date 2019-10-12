@@ -2,9 +2,11 @@
   <div class="work-image">
     <p :id="triggerId">{{ name }}</p>
     <slot></slot>
-    <a :id="imageId" :href="url" target="_blank">
-      <img v-if="getImage()" :src="getImage()" />
-    </a>
+    <div class="work-image-content">
+      <a :id="imageId" :href="url" target="_blank">
+        <img v-if="getImage()" :src="getImage()" />
+      </a>
+    </div>
   </div>
 </template>
 <script>
@@ -53,12 +55,24 @@ export default {
     padding-bottom: 15px;
   }
 
+  .work-image-content {
+    width: 240px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
   img {
     width: 240px;
     height: 150px;
     box-shadow: 12px 20px 25px 0 rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
     border: 0;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(1.05, 1.05);
+      opacity: 0.7;
+    }
   }
 
   iframe {

@@ -2,13 +2,15 @@
   <div class="article-content">
     <div>
       <p>{{ name }}</p>
-      <a :href="url" target="_blank">
-        <img
-          :src="getImage()"
-          @mouseover="stopImage()"
-          @mouseleave="startImage()"
-        />
-      </a>
+      <div class="image-content">
+        <a :href="url" target="_blank">
+          <img
+            :src="getImage()"
+            @mouseover="stopImage()"
+            @mouseleave="startImage()"
+          />
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -57,12 +59,24 @@ export default {
     padding-bottom: 15px;
   }
 
+  .image-content {
+    height: 150px;
+    width: 240px;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
   img {
     height: 150px;
     width: 240px;
     box-shadow: 12px 20px 25px 0 rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
     border: 0;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(1.05, 1.05);
+      opacity: 0.7;
+    }
   }
 }
 @media screen and (max-width: 1220px) {
