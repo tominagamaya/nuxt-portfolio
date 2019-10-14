@@ -85,3 +85,16 @@
     transform: translateY(0) rotate(-15deg);
   }
 }
+
+.move-to-right {
+  animation: icon-move 40s infinite;
+}
+
+@keyframes icon-move {
+  from {
+    transform: translate(-10%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}

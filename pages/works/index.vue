@@ -2,6 +2,7 @@
   <div class="page-about">
     <section>
       <h2 class="section-title effect-fade-side">Works</h2>
+      <icon-car></icon-car>
       <article-body class="works">
         <div class="work-content">
           <p class="work-detail">
@@ -90,10 +91,12 @@
 </template>
 <script>
 import ArticleBody from '~/components/common/ArticleBody'
+import IconCar from '~/components/IconCar'
 import ImageWork from '~/components/ImageWork'
 export default {
   components: {
     ArticleBody,
+    IconCar,
     ImageWork
   },
   mounted() {
