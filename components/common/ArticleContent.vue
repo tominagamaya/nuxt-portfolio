@@ -87,5 +87,11 @@ export default {
     align-items: center;
     text-align: center;
   }
+  @media (max-width: 480px) {
+    .article-content p {
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
 }
 </style>

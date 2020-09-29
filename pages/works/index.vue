@@ -186,4 +186,15 @@ export default {
     padding: 50px 30px;
   }
 }
+
+@media (max-width: 480px) {
+  .work-about {
+    p {
+      font-size: 16px;
+    }
+    .detail li {
+      line-height: 20px;
+    }
+  }
+}
 </style>

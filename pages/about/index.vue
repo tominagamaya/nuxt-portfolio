@@ -102,4 +102,16 @@ export default {
     padding: 50px 30px;
   }
 }
+@media (max-width: 480px) {
+  .about,
+  .skils {
+    padding: 20px;
+  }
+  .article-body.skils ul {
+    font-size: 13px;
+  }
+  .about-title {
+    line-height: 23px;
+  }
+}
 </style>

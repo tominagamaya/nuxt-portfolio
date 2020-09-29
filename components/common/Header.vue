@@ -23,6 +23,11 @@
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 2.5px;
+
+  @media (max-width: 480px) {
+    font-size: 15px;
+    right: auto;
+  }
 }
 .header-link {
   color: $color-dark-gray;

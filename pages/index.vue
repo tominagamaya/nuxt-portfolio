@@ -27,30 +27,30 @@
             <swiper-slide>
               <article-content
                 id="work-image"
+                :parent-refs="parentRefs"
                 name="技術ブログ"
                 url="https://mmtomitomimm.blogspot.com/"
                 file="blog.png"
-                :parent-refs="parentRefs"
               >
               </article-content>
             </swiper-slide>
             <swiper-slide>
               <article-content
                 id="work-image"
+                :parent-refs="parentRefs"
                 name="ユーザー管理アプリ"
                 url="https://user-setting-app-20190502.herokuapp.com/"
                 file="manage-app.png"
-                :parent-refs="parentRefs"
               >
               </article-content>
             </swiper-slide>
             <swiper-slide>
               <article-content
                 id="work-image"
+                :parent-refs="parentRefs"
                 name="ブログアプリ"
                 url="https://calm-beach-62772.herokuapp.com/"
                 file="blog-app.png"
-                :parent-refs="parentRefs"
               >
               </article-content>
             </swiper-slide>

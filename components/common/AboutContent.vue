@@ -35,4 +35,18 @@
     font-size: 15px;
   }
 }
+
+@media (max-width: 480px) {
+  .about-content {
+    width: 90%;
+
+    p + p {
+      line-height: 1.8;
+    }
+  }
+  .circle {
+    width: 18px;
+    height: 18px;
+  }
+}
 </style>

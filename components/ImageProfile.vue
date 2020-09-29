@@ -28,5 +28,13 @@
     width: 350px;
     height: 270px;
   }
+
+  @media (max-width: 480px) {
+    .about-image {
+      width: 290px;
+      height: 240px;
+      margin: 16px 15px 0 15px;
+    }
+  }
 }
 </style>

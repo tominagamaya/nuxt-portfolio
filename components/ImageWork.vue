@@ -53,6 +53,11 @@ export default {
 
   p {
     padding-bottom: 15px;
+
+    @media (max-width: 480px) {
+      font-size: 15px;
+      font-weight: bold;
+    }
   }
 
   .work-image-content {
