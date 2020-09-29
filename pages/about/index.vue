@@ -114,6 +114,7 @@ export default {
 .about-title {
   font-size: 18px;
   font-weight: bold;
+  padding-top: 5px;
 }
 
 @media screen and (max-width: 1140px) {
@@ -132,6 +133,8 @@ export default {
   }
   .about-title {
     line-height: 23px;
+    padding-top: 0;
+    margin-top: -2px;
   }
 }
 </style>
