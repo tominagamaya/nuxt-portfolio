@@ -25,13 +25,13 @@
         </about-content>
         <about-content>
           <p class="about-title">
-            2015年12月-2017年12月&nbsp;&nbsp;事業会社のサーバーサイドエンジニアとして働く
+            2015年12月-2017年12月&nbsp;&nbsp;通信系事業会社のサーバーサイドエンジニアとして働く
           </p>
           <p>
             前職だとマネージメントが求められるため、プログラミングをしていきたい想いが強くなり転職。<br />
-            SESとしてユーザー向け事業会社のサーバーサイド開発を担当。<br />
+            SESとしてユーザー向け事業会社のバッチ処理(サーバーサイド)の開発を担当。<br />
             アジャイルで無駄のない開発をすることができ、プログラミングの楽しさを実感する。<br />
-            使用技術は Java8（Springフレームワーク）, MySQL<br />
+            使用技術は Java8（Springフレームワーク）, OracleDB<br />
           </p>
         </about-content>
         <about-content>
@@ -41,13 +41,33 @@
         </about-content>
         <about-content>
           <p class="about-title">
-            2018年3月-2019年6月&nbsp;&nbsp;事業会社のWebアプリケーションエンジニアとして働く
+            2018年3月-2019年6月&nbsp;&nbsp;AI系事業会社のWebアプリケーションエンジニアとして働く
           </p>
           <p>
             SESだとサービスに深く関われなかったり情報の共有が少なかったので、事業会社の社員として働きたい想いが強くなり転職。<br />
             自社開発と受託開発を担当し、クラウドインフラからサーバーサイド、フロントエンドまで幅広く経験。<br />
             ユーザーの気持ちや体験を変えることができるフロントエンドの開発に強く興味を持つようになる。<br />
-            使用技術は Python（Flask）, JavaScript（Vue.js）, GCP<br />
+            使用技術は Python（Flask）, JavaScript（Vue.js）, HTML, CSS, GCP<br />
+          </p>
+        </about-content>
+        <about-content>
+          <p class="about-title">
+            2019年10月-2019年12月&nbsp;&nbsp;Web制作会社でフロントエンジニアとして働く
+          </p>
+          <p>
+            UIといったフロントエンドの開発スキルを高めるべく転職。
+            契約社員として3ヶ月のみWebサイトの改修等を経験。<br />
+            使用技術は HTML, CSS(Scss), JavaScript（Vue.js）, AWS<br />
+          </p>
+        </about-content>
+        <about-content>
+          <p class="about-title">
+            2020年1月-現在&nbsp;&nbsp;人材系事業会社のUXエンジニアとして働く
+          </p>
+          <p>
+            今まで経験したサーバーサイドからフロントエンドのスキルを活かし、
+            求人サービスのサイトの使い心地といったユーザー体験の改善を担当。A/Bテスト等も実施。<br />
+            使用技術は HTML, CSS, JavaScript（jQuery）, AWS<br />
           </p>
         </about-content>
       </article-body>
