@@ -27,36 +27,36 @@ async function start() {
     await nuxt.ready()
   }
 
-    // Give nuxt middleware to express
-    app.use(nuxt.render)
+  // Give nuxt middleware to express
+  app.use(nuxt.render)
 
-    // Prefer HTTPS if cert files are provided, otherwise fall back to HTTP in dev
-    const keyPath = path.join(__dirname, 'server.key')
-    const certPath = path.join(__dirname, 'server.crt')
+  // Prefer HTTPS if cert files are provided, otherwise fall back to HTTP in dev
+  const keyPath = path.join(__dirname, 'server.key')
+  const certPath = path.join(__dirname, 'server.crt')
 
-    if (fs.existsSync(keyPath) && fs.existsSync(certPath)) {
-      try {
-        const options = {
-          key: fs.readFileSync(keyPath),
-          cert: fs.readFileSync(certPath)
-        }
-        https.createServer(options, app).listen(port, host)
-        consola.ready({
-          message: `HTTPS Server listening on https://${host}:${port}`,
-          badge: true
-        })
-        return
-      } catch (err) {
-        consola.warn('Failed to start HTTPS server, falling back to HTTP:', err.message)
+  if (fs.existsSync(keyPath) && fs.existsSync(certPath)) {
+    try {
+      const options = {
+        key: fs.readFileSync(keyPath),
+        cert: fs.readFileSync(certPath)
       }
+      https.createServer(options, app).listen(port, host)
+      consola.ready({
+        message: `HTTPS Server listening on https://${host}:${port}`,
+        badge: true
+      })
+      return
+    } catch (err) {
+      consola.warn('Failed to start HTTPS server, falling back to HTTP:', err.message)
     }
+  }
 
-    // Fallback to plain HTTP
-    app.listen(port, host)
-    consola.ready({
-      message: `Server listening on http://${host}:${port}`,
-      badge: true
-    })
+  // Fallback to plain HTTP
+  app.listen(port, host)
+  consola.ready({
+    message: `Server listening on http://${host}:${port}`,
+    badge: true
+  })
 
   // (server started above)
 }
