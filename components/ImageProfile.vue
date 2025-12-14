@@ -1,6 +1,6 @@
 <template>
   <div class="about-image effect-delay-fade-top">
-    <img src="~/assets/images/me.png" alt="Maya Tominaga" />
+    <img src="~/assets/images/me.jpg" alt="Maya Tominaga" />
   </div>
 </template>
 <style scoped lang="scss">
@@ -10,29 +10,36 @@
   position: absolute;
   display: block;
   right: 160px;
-  top: 140px;
+  top: 225px;
   border-radius: 4px;
   border: 0;
   box-shadow: 1px 27px 39px 0 rgba(0, 0, 0, 0.07);
-  width: 350px;
+  width: 150px;
 }
 
 @media screen and (max-width: 1220px) {
+  /* On smaller screens, make the profile image part of the flow so it doesn't overlap text */
   .about-image {
-    position: absolute;
-    top: 170px;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    position: static; /* remove absolute positioning */
     margin: 0 auto;
-    width: 350px;
-    height: 270px;
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    /* Ensure there's spacing between the image and following text */
+    margin-bottom: 20px;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
   }
 
   @media (max-width: 480px) {
     .about-image {
-      width: 290px;
-      height: 240px;
+      max-width: 320px;
       margin: 16px 15px 0 15px;
     }
   }

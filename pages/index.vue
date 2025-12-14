@@ -8,14 +8,34 @@
         <h2 class="section-title effect-delay-fade-side">Maya Tominaga</h2>
         <article-body class="profile">
           <image-profile></image-profile>
-          <p>
-            独立系SIerから事業会社のWebエンジニアになりました。<br />
-            サーバーサイド、フロントエンドまで幅広く経験。<br />
-            ユーザー目線にたったデザインを含むフロントエンド開発が得意。<br />
-            技術ブログを書くことが好きで、週1の頻度で更新しています。<br />
-            テニスが好きでスクールに通っています。<br />
-            継続的な努力と想いやりを大切にしています。<br />
+          <p class="profile-text">
+            独立系SIから大手SES企業を経て、事業会社のWebエンジニアになりました。事業会社ではサーバーサイドとフロントエンドどちらも開発を担当していましたが、よりフロントエンド技術と折衝スキルを高めたく外資系SIでフロントエンドエンジニアとして働いた後に前職の大手SES企業に出戻らせて頂きフロントエンド開発をしています。
           </p>
+          <p class="profile-text">
+            サーバーサイド、フロントエンドまで幅広く経験しています。ユーザー目線に立ったフロントエンド開発が得意で、要望を整理して実現する方法を考えるのも好きです。
+          </p>
+          <p class="profile-text">
+            直近で得意な技術は React, Nuxt.js です。
+            昔は技術ブログを書くことが好きで、週1の頻度で更新していました。
+          </p>
+        </article-body>
+      </section>
+      <section>
+        <h2 class="section-title effect-delay-fade-side">Skills</h2>
+        <article-body class="profile">
+          <ul class="skills">
+            <li>Java（Spring）</li>
+            <li>Python（Flask）</li>
+            <li>JavaScript（Vue.js）</li>
+            <li>HTML, CSS</li>
+            <li>MySQL, Oracle</li>
+            <li>Git</li>
+            <li>
+              GCP（App Engine / Compute Engine / Cloud SQL / Stackdriver）
+            </li>
+            <li>Docker</li>
+            <li>DDD（設計思想）</li>
+          </ul>
         </article-body>
       </section>
       <section>
@@ -177,8 +197,32 @@ svg {
 }
 
 .profile {
-  p {
-    line-height: 45px;
+  .profile-text {
+    /* Paragraph spacing and readable line-height */
+    line-height: 1.9;
+    margin: 0 0 14px 0;
+    font-size: 16px;
+    max-width: 700px;
+  }
+
+  /* Skills list styling */
+  .skills {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* Stack items vertically (one per line) */
+    display: block;
+
+    li {
+      display: block;
+      padding: 6px 0;
+      /* Slightly narrower spacing per user request */
+      line-height: 1.2;
+      margin: 0 0 10px 0;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.03);
+      font-size: 16px;
+    }
   }
 }
 
@@ -203,11 +247,27 @@ svg {
 @media screen and (max-width: 1220px) {
   .article-body {
     text-align: center;
-    padding: 320px 30px 30px 30px;
+    /* Removed large top padding originally used to accommodate absolutely positioned image */
+    padding: 30px 30px;
 
     p {
       font-size: 15px;
-      line-height: 30px;
+      /* Use a unitless line-height for better scalability */
+      line-height: 1.4;
+    }
+    .skills {
+      /* Center text on narrow screens while keeping vertical stacking */
+      text-align: center;
+      li {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    }
+    /* Ensure profile-specific paragraphs keep the same line-height on narrow screens */
+    .profile-text {
+      line-height: 1.9;
+      font-size: 15px;
+      max-width: unset;
     }
   }
   .works {

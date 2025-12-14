@@ -25,6 +25,9 @@
 
   img {
     max-width: 100%;
+    display: block;
+    /* default spacing under images */
+    margin-bottom: 20px;
   }
 
   ul {
@@ -43,6 +46,10 @@
     p {
       font-size: 15px;
       line-height: 30px;
+    }
+    img {
+      /* keep space under images on narrow screens */
+      margin-bottom: 20px;
     }
   }
 }
