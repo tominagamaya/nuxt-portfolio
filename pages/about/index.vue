@@ -6,20 +6,10 @@
       <article-body class="about">
         <about-content>
           <p class="about-title">
-            2009年4月-2011年3月&nbsp;&nbsp;食品経済学科を専攻
-          </p>
-          <p>
-            将来は食品関係の会社で商品開発をしたいと思うようになるが、就職活動で第一志望だった食品業界の選考に全滅する。<br />
-            数学が好きだったためIT業界の選考を受け、とあるSI企業から内定をもらう。<br />
-          </p>
-        </about-content>
-        <about-content>
-          <p class="about-title">
             2011年4月-2015年9月&nbsp;&nbsp;独立系SI企業でシステムエンジニアとして働く
           </p>
           <p>
             官公庁等のシステム開発や運用保守を担当。最後の1年間ではサブリーダーも経験する。<br />
-            社会経験を経てビールが好きになる。
           </p>
         </about-content>
         <about-content>
