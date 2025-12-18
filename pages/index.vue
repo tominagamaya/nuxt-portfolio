@@ -9,13 +9,13 @@
         <article-body class="profile">
           <image-profile></image-profile>
           <p class="profile-text">
-            独立系SIから大手SES企業を経て、事業会社のWebエンジニアになりました。事業会社ではサーバーサイドとフロントエンドどちらも開発を担当していましたが、よりフロントエンド技術と折衝スキルを高めたく外資系SIでフロントエンドエンジニアとして働いた後に前職の大手SES企業に出戻らせて頂きフロントエンド開発をしています。
+            独立系SIから大手SES企業を経て、事業会社のWebエンジニアになりました。事業会社ではサーバーサイドとフロントエンドどちらも開発を担当していましたが、よりフロントエンド技術と折衝スキルを高めたく外資系SIでフロントエンドエンジニア兼コンサルタントとして働いた後に前職の大手SES企業に出戻らせて頂きフロントエンド開発をしています。
           </p>
           <p class="profile-text">
             サーバーサイド、フロントエンドまで幅広く経験しています。ユーザー目線に立ったフロントエンド開発が得意で、要望を整理して実現する方法を考えるのも好きです。
           </p>
           <p class="profile-text">
-            直近で得意な技術は React, Nuxt.js です。
+            得意な技術は React, Nuxt.js です。
             昔は技術ブログを書くことが好きで、週1の頻度で更新していました。
           </p>
         </article-body>
@@ -24,15 +24,13 @@
         <h2 class="section-title effect-delay-fade-side">Skills</h2>
         <article-body class="profile">
           <ul class="skills">
-            <li>Java（Spring）</li>
-            <li>Python（Flask）</li>
-            <li>JavaScript（Vue.js）</li>
+            <li>JavaScript（React, Next.js, Vue.js）</li>
             <li>HTML, CSS</li>
+            <li>Java8（Spring）</li>
+            <li>Python（Flask）</li>
             <li>MySQL, Oracle</li>
-            <li>Git</li>
-            <li>
-              GCP（App Engine / Compute Engine / Cloud SQL / Stackdriver）
-            </li>
+            <li>Git, Figma, Storybook</li>
+            <li>GCP, AWS, Azure</li>
             <li>Docker</li>
             <li>DDD（設計思想）</li>
           </ul>

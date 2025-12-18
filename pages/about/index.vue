@@ -20,12 +20,12 @@
             前職だとマネージメントが求められるため、技術スキルを高めていきたい想いが強くなり転職。<br />
             SESとしてユーザー向け事業会社のバッチ処理(サーバーサイド)の開発を担当。<br />
             アジャイルで高速かつ効率的な開発をすることができ、プログラミングの楽しさを実感する。<br />
-            使用技術は Java8（Springフレームワーク）, OracleDB<br />
+            使用技術は Java8（Springフレームワーク）, Oracle<br />
           </p>
         </about-content>
         <about-content>
           <p class="about-title">
-            社外勉強会で出会ったスゴイ登壇者の影響で、技術ブログを書き始める
+            社外勉強会で出会った登壇者の影響で、技術ブログを書き始める
           </p>
         </about-content>
         <about-content>
@@ -66,7 +66,7 @@
           <p>
             より良いUI/UXの提案や折衝スキルを伸ばしたく、外資系SI企業へ転職。
             金融系Webサービスの刷新プロジェクトに参画し、新規画面開発を行いクライアントとの折衝も担当。<br />
-            使用技術は Angular, Azure<br />
+            使用技術は JavaScript（Angular）, Azure<br />
           </p>
         </about-content>
         <about-content>
@@ -76,7 +76,7 @@
           <p>
             前職で負荷が高く悩んでいたときに相談にのっていただき、出戻りさせて頂き再度大手SES企業に就職。
             フロントエンドエンジニアとして金融系Webサービスの刷新プロジェクトに参画し、設計から実装、テスト工程の不具合修正まで担当。
-            使用技術は HTML, CSS, JavaScript（React）, AWS<br />
+            使用技術は HTML, CSS, JavaScript（React, Next.js）, AWS<br />
           </p>
         </about-content>
       </article-body>
@@ -86,13 +86,13 @@
       <article-body class="skils">
         <p class="article-detail">実務経験がある技術です。</p>
         <ul>
-          <li>Java8（Spring）</li>
-          <li>Python2, Python3（Flask）</li>
-          <li>Javascript（Vue.js, React, Nuxt.js）</li>
+          <li>JavaScript（React, Next.js, Vue.js）</li>
           <li>HTML, CSS</li>
+          <li>Java8（Spring）</li>
+          <li>Python（Flask）</li>
           <li>MySQL, Oracle</li>
-          <li>Git</li>
-          <li>GCP（App Engine / Compute Engine / Cloud SQL / Stackdriver）</li>
+          <li>Git, Figma, Storybook</li>
+          <li>GCP, AWS, Azure</li>
           <li>Docker</li>
           <li>DDD（設計思想）</li>
         </ul>

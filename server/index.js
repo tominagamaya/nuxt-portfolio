@@ -47,7 +47,10 @@ async function start() {
       })
       return
     } catch (err) {
-      consola.warn('Failed to start HTTPS server, falling back to HTTP:', err.message)
+      consola.warn(
+        'Failed to start HTTPS server, falling back to HTTP:',
+        err.message
+      )
     }
   }
 
