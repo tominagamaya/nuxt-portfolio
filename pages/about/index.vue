@@ -95,6 +95,7 @@
           <li>GCP, AWS, Azure</li>
           <li>Docker</li>
           <li>DDD（設計思想）</li>
+          <li>Slack, Teams</li>
         </ul>
       </article-body>
     </section>

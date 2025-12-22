@@ -33,6 +33,7 @@
             <li>GCP, AWS, Azure</li>
             <li>Docker</li>
             <li>DDD（設計思想）</li>
+            <li>Slack, Teams</li>
           </ul>
         </article-body>
       </section>
@@ -72,10 +73,37 @@
               >
               </article-content>
             </swiper-slide>
+            <swiper-slide>
+              <article-content
+                id="work-image"
+                :parent-refs="parentRefs"
+                name="LP"
+                url="https://tmaya-lp.netlify.app/"
+                file="lp.png"
+              >
+              </article-content>
+            </swiper-slide>
             <div slot="button-prev" class="swiper-button-prev"></div>
             <div slot="button-next" class="swiper-button-next"></div>
             <div slot="pagination" class="swiper-pagination"></div>
           </swiper>
+        </article-body>
+      </section>
+      <section>
+        <h2 id="github-trigger" class="section-title effect-delay-fade-side">
+          Github
+        </h2>
+        <article-body class="github">
+          <image-work url="https://github.com/tominagamaya">
+            <iframe
+              id="image3"
+              title="tominagamaya - Overview"
+              src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fgithub.com%2Ftominagamaya"
+              frameborder="0"
+              scrolling="no"
+            >
+            </iframe>
+          </image-work>
         </article-body>
       </section>
     </div>
