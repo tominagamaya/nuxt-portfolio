@@ -18,7 +18,7 @@
     "@nuxtjs/bulma": "^1.3.0",
     "cross-env": "^5.2.1",
     "express": "^4.16.4",
-    "nuxt": "^2.14.6",
+    "nuxt": "^3.4.3",
     "vue": "^2.6.12",
     "vue-awesome-swiper": "^3.1.3",
     "vue-scrollmagic": "^1.2.0"
